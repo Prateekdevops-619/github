@@ -39,5 +39,4 @@ jobs:
             
             
             
-            
-            stemctl restart nginx
+            stemctl restart n
