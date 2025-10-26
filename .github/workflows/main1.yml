@@ -18,7 +18,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
+          key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           source: ./
           target: ./
@@ -28,7 +28,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
+          key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           script: |
             ls -al
@@ -38,12 +38,3 @@ jobs:
             sudo systemctl restart nginx
             
 
-
-
-
-
-
-            
-            sudo s
-            
-            ystemctl restart nginx
